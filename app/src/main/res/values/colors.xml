@@ -24,9 +24,14 @@
     <color name="pantone331c">#05c3de</color>
 
 
-    <!--My Color-->
-    <color name="a">#128C7E</color>
-    <color name="b">#075e54</color>
-    <color name="c">#41a290</color>
+    <!--My Color one-->
+    <color name="YellowOne">#FDD329</color>
+    <color name="YellowTwo">#F8B71F</color>
+    <color name="GreyButton">#636363</color>
+
+    <!--My Color two-->
+    <color name="BlueOne">#141466</color>
+    <color name="BlueTwo">#2929CC</color>
+    <color name="BlueThree">#6677CC</color>
 
 </resources>

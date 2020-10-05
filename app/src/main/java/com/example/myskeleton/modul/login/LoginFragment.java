@@ -9,10 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.annotation.Nullable;
-
-import com.example.myskeleton.FirstActivity;
 import com.example.myskeleton.R;
 import com.example.myskeleton.base.BaseFragment;
+import com.example.myskeleton.modul.profile.ProfileActivity;
 
 
 /**
@@ -23,6 +22,8 @@ public class LoginFragment extends BaseFragment<LoginActivity, LoginContract.Pre
 
     EditText etEmail;
     EditText etPassword;
+    String email;
+    String password;
     Button btnLogin;
 
 
@@ -53,8 +54,8 @@ public class LoginFragment extends BaseFragment<LoginActivity, LoginContract.Pre
     }
 
     public void setBtLoginClick(){
-        String email = etEmail.getText().toString();
-        String password = etPassword.getText().toString();
+        email = etEmail.getText().toString();
+        password = etPassword.getText().toString();
         mPresenter.performLogin(email,password);
     }
 
@@ -65,7 +66,9 @@ public class LoginFragment extends BaseFragment<LoginActivity, LoginContract.Pre
 
     @Override
     public void redirectToProfile() {
-            Intent intent = new Intent(activity, FirstActivity.class);
+            Intent intent = new Intent(activity, ProfileActivity.class);
+            intent.putExtra("email", email);
+            intent.putExtra("password", password);
             startActivity(intent);
             activity.finish();
     }

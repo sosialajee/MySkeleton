@@ -1,9 +1,7 @@
 package com.example.myskeleton.modul.login;
 
 import android.view.View;
-
 import com.example.myskeleton.base.BaseFragmentHolderActivity;
-
 
 public class LoginActivity extends BaseFragmentHolderActivity {
     LoginFragment loginFragment;

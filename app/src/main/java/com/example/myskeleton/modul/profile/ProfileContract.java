@@ -1,18 +1,18 @@
 package com.example.myskeleton.modul.profile;
 
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.myskeleton.base.BasePresenter;
 import com.example.myskeleton.base.BaseView;
 
-/**
- * Created by fahrul on 13/03/19.
- */
-
-public interface LoginContract {
+public interface ProfileContract {
     interface View extends BaseView<Presenter> {
-        void redirectToProfile();
+        void setProfile(String email, String password);
     }
 
     interface Presenter extends BasePresenter {
-        void performLogin(String email, String password);
+        void initializeProfile(Bundle bundle);
     }
 }

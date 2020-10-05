@@ -1,9 +1,5 @@
 package com.example.myskeleton.modul.login;
 
-/**
- * Created by fahrul on 13/03/19.
- */
-
 public class LoginPresenter implements LoginContract.Presenter{
     private final LoginContract.View view;
 
