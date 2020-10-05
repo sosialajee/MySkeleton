@@ -44,4 +44,5 @@
         <item name="imageTransparentOverlay">@color/pantoneTransparent</item>
     </style>
 
+
 </resources>

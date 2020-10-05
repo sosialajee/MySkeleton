@@ -34,7 +34,11 @@ public class ProfileFragment extends BaseFragment<ProfileActivity, ProfileContra
         fragmentView = inflater.inflate(R.layout.fragment_profile, container, false);
         mPresenter = new ProfilePresenter(this);
         mPresenter.start();
+
+        tvEmail = fragmentView.findViewById(R.id.tvEmail);
+        tvPassword = fragmentView.findViewById(R.id.tvPassword);
         mPresenter.initializeProfile(bundle);
+
 
         setTitle("Profile");
 
